@@ -53,7 +53,7 @@ class ProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def product_params
-      delocalize_config = { :available_on => :date, :available_until => :time, :price => :number }
+      delocalize_config = { released_on: :date, available_until: :time, price: :number }
       params.require(:product).
              permit(*delocalize_config.keys).
              delocalize(delocalize_config)

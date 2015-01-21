@@ -15,7 +15,7 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.available_on %></td>
+        <td><%= product.released_on %></td>
         <td><%= product.available_until %></td>
         <td><%= product.price %></td>
         <td><%= link_to 'Show', product %></td>

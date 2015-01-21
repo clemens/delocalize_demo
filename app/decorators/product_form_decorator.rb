@@ -1,8 +1,8 @@
 class ProductFormDecorator < FormDecorator
   decorates :product
 
-  def available_on
-    h.l(model.available_on) if model.available_on.present?
+  def released_on
+    h.l(model.released_on) if model.released_on.present?
   end
 
   def available_until

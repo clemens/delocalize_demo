@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150121172951) do
 
   create_table "products", force: :cascade do |t|
-    t.date     "available_on"
+    t.date     "released_on"
     t.datetime "available_until"
     t.decimal  "price",           precision: 5, scale: 2
     t.datetime "created_at",                              null: false
